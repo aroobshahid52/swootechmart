@@ -6,7 +6,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-
+import AuthGuard from "@/components/AuthGuard";
 import ProductCard from "@/components/ProductCard";
 import ProductFilters from "@/components/ProductFilters";
 
@@ -980,10 +980,20 @@ async function addToCart(product: Product) {
     </main>
   );
 }
+// export default function ProductsPage() {
+//   return (
+//     <Suspense fallback={null}>
+//       <ProductsContent />
+//     </Suspense>
+//   );
+// }
+
 export default function ProductsPage() {
   return (
-    <Suspense fallback={null}>
-      <ProductsContent />
-    </Suspense>
+    <AuthGuard>
+      <Suspense fallback={null}>
+        <ProductsContent />
+      </Suspense>
+    </AuthGuard>
   );
 }
