@@ -249,7 +249,7 @@ export default function OrdersPage() {
                           </p>
 
                           <p className="text-lg font-bold text-gray-900">
-                            $
+                            
                             {Number(
                               order.totalPrice || 0
                             ).toFixed(2)}
@@ -287,10 +287,10 @@ export default function OrdersPage() {
                           </p>
 
                           <p className="mt-1 text-sm font-semibold text-green-600">
-                            $
+                            
                             {Number(
                               product.price || 0
-                            ).toFixed(2)}
+                            )}
                           </p>
                         </div>
                       </div>

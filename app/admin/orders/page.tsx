@@ -967,10 +967,10 @@ export default function AdminOrdersPage() {
                         </p>
 
                         <p className="text-lg font-bold text-gray-900">
-                          $
+                          
                           {Number(
                             order.totalPrice || 0
-                          ).toFixed(2)}
+                          )}
                         </p>
                       </div>
 
@@ -1013,10 +1013,10 @@ export default function AdminOrdersPage() {
                           </div>
 
                           <p className="shrink-0 text-sm font-bold text-gray-900">
-                            $
+                            
                             {Number(
                               product.price || 0
-                            ).toFixed(2)}
+                            )}
                           </p>
 
                         </div>

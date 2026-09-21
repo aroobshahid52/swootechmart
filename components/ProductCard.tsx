@@ -121,7 +121,7 @@ export default function ProductCard({
 
         {/* Price */}
         <p className="mt-2 text-sm font-bold text-gray-900">
-          ${Number(product.price || 0).toFixed(2)}
+          {Number(product.price || 0)}
         </p>
 
         {/* Shipping / Stock */}

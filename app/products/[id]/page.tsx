@@ -382,10 +382,10 @@ async function buyNow() {
               <div className="mt-5 border-y border-gray-100 py-5">
 
                 <p className="text-3xl font-bold text-red-500">
-                  $
+            
                   {Number(
                     product.price
-                  ).toFixed(2)}
+                  )}
                 </p>
 
                 <p className="mt-1 text-[10px] text-gray-400">
@@ -519,7 +519,7 @@ async function buyNow() {
                   </p>
 
                   <p className="text-lg font-bold text-gray-900">
-                    $
+                    
                     {totalPrice.toFixed(
                       2
                     )}

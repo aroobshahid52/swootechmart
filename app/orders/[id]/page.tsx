@@ -247,7 +247,7 @@ export default function OrderDetailsPage() {
                       </p>
 
                       <p className="mt-1 text-sm font-semibold text-green-600">
-                        ${Number(product.price || 0).toFixed(2)}
+                        {Number(product.price || 0)}
                       </p>
 
                     </div>
@@ -267,7 +267,7 @@ export default function OrderDetailsPage() {
                 </span>
 
                 <span className="text-xl font-bold text-gray-900">
-                  ${Number(order.totalPrice || 0).toFixed(2)}
+                  {Number(order.totalPrice || 0)}
                 </span>
               </div>
 

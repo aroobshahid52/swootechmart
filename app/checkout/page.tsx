@@ -577,11 +577,11 @@ export default function CheckoutPage() {
                     </div>
 
                     <p className="text-[10px] font-bold text-gray-900">
-                      $
+                      
                       {(
                         price *
                         item.quantity
-                      ).toFixed(2)}
+                      )}
                     </p>
 
                   </div>
@@ -599,7 +599,7 @@ export default function CheckoutPage() {
                 </span>
 
                 <span className="text-[10px] font-semibold text-gray-900">
-                  ${subtotal.toFixed(2)}
+                  {subtotal}
                 </span>
               </div>
 
@@ -609,7 +609,7 @@ export default function CheckoutPage() {
                 </span>
 
                 <span className="text-[10px] font-semibold text-gray-900">
-                  ${shipping.toFixed(2)}
+                  {shipping}
                 </span>
               </div>
 
@@ -619,7 +619,7 @@ export default function CheckoutPage() {
                 </span>
 
                 <span className="text-[10px] font-semibold text-gray-900">
-                  ${tax.toFixed(2)}
+                  {tax}
                 </span>
               </div>
 
@@ -632,7 +632,7 @@ export default function CheckoutPage() {
                   </span>
 
                   <span className="text-base font-bold text-green-600">
-                    ${total.toFixed(2)}
+                    {total}
                   </span>
 
                 </div>

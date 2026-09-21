@@ -1115,11 +1115,11 @@ export default function CartPage() {
                           <div className="mt-3 flex items-center justify-between">
 
                             <span className="text-sm font-bold text-gray-900">
-                              ${price.toFixed(2)}
+                              {price}
                             </span>
 
                             <span className="text-[9px] text-gray-500">
-                              Total: $
+                              Total: 
                               {itemTotal.toFixed(
                                 2
                               )}
@@ -1207,7 +1207,7 @@ export default function CartPage() {
                   </span>
 
                   <span className="text-[10px] font-semibold text-gray-900">
-                    ${subtotal.toFixed(2)}
+                    {subtotal}
                   </span>
 
                 </div>
@@ -1219,7 +1219,7 @@ export default function CartPage() {
                   </span>
 
                   <span className="text-[10px] font-semibold text-gray-900">
-                    ${shipping.toFixed(2)}
+                    {shipping}
                   </span>
 
                 </div>
@@ -1231,7 +1231,7 @@ export default function CartPage() {
                   </span>
 
                   <span className="text-[10px] font-semibold text-gray-900">
-                    ${tax.toFixed(2)}
+                    {tax}
                   </span>
 
                 </div>
@@ -1245,7 +1245,7 @@ export default function CartPage() {
                     </span>
 
                     <span className="text-sm font-bold text-green-600">
-                      ${total.toFixed(2)}
+                      {total}
                     </span>
 
                   </div>
