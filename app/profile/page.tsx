@@ -332,6 +332,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
 type User = {
   _id?: string;
@@ -614,7 +616,7 @@ export default function ProfilePage() {
             {/* Admin My Orders */}
             {isAdmin && (
               <Link
-                href="/orders"
+                href="/admin/orders"
                 className="rounded-xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-6"
               >
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-green-100 sm:mb-4 sm:h-11 sm:w-11">
@@ -624,7 +626,7 @@ export default function ProfilePage() {
                 </div>
 
                 <h3 className="text-sm font-bold text-gray-900 sm:text-base">
-                  My Orders
+                  Total Orders
                 </h3>
 
                 <p className="mt-1 text-xs leading-5 text-gray-400 sm:mt-2 sm:text-sm sm:leading-6">
@@ -635,17 +637,17 @@ export default function ProfilePage() {
 
             {/* Wishlist */}
             <Link
-              href="/wishlist"
+              href="/admin/users"
               className="rounded-xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-6"
             >
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-green-100 sm:mb-4 sm:h-11 sm:w-11">
                 <span className="text-base text-green-600 sm:text-lg">
-                  ♡
-                </span>
+  <FontAwesomeIcon icon={faUsers} />
+</span>
               </div>
 
               <h3 className="text-sm font-bold text-gray-900 sm:text-base">
-                My Wishlist
+                Users
               </h3>
 
               <p className="mt-1 text-xs leading-5 text-gray-400 sm:mt-2 sm:text-sm sm:leading-6">

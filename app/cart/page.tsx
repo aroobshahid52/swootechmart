@@ -713,6 +713,10 @@ export default function CartPage() {
       setCart(Array.isArray(data) ? data : []);
     } catch (err) {
       console.error(err);
+      
+
+      window.dispatchEvent(new Event("cartUpdated"));
+
 
       setError(
         err instanceof Error
@@ -774,6 +778,9 @@ export default function CartPage() {
             : item
         )
       );
+
+      window.dispatchEvent(new Event("cartUpdated"));
+
     } catch (err) {
       console.error(err);
 
@@ -821,6 +828,8 @@ export default function CartPage() {
           (item) => item._id !== cartId
         )
       );
+      window.dispatchEvent(new Event("cartUpdated"));
+
     } catch (err) {
       console.error(err);
 
@@ -872,6 +881,7 @@ export default function CartPage() {
       }
 
       setCart([]);
+      window.dispatchEvent(new Event("cartUpdated"));
     } catch (err) {
       console.error(err);
 

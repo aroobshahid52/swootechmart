@@ -264,8 +264,7 @@ export default function Home() {
 </p>
 
       <p className="mt-1 text-[11px] text-gray-500">
-        From $569
-      </p>
+        From 5599      </p>
 
       <p className="mt-3 text-[10px] font-semibold text-gray-700 hover:text-green-600">
         DISCOVER NOW
@@ -588,7 +587,7 @@ export default function Home() {
           </h3>
 
           <p className="mt-3 text-2xl font-bold text-red-500">
-            $569.00
+            89,999
           </p>
 
           <ul className="mt-4 list-disc space-y-1 pl-4 text-xs text-gray-600">
@@ -657,31 +656,31 @@ export default function Home() {
           {[
             {
               name: "Wireless Headphones",
-              price: "$129.00",
+              price: "29,000",
               image:
                 "https://images.pexels.com/photos/5269699/pexels-photo-5269699.jpeg",
             },
             {
               name: "Smart Watch",
-              price: "$89.00",
+              price: "4,300",
               image:
                 "https://images.pexels.com/photos/18662969/pexels-photo-18662969.jpeg",
             },
             {
               name: "Gaming Keyboard",
-              price: "$79.00",
+              price: "8,790",
               image:
                 "https://images.pexels.com/photos/5380584/pexels-photo-5380584.jpeg",
             },
             {
               name: "Speaker",
-              price: "$99.00",
+              price: "7,999",
               image:
                 "https://images.pexels.com/photos/4917455/pexels-photo-4917455.jpeg",
             },
             {
               name: "Gaming Mouse",
-              price: "$59.00",
+              price: "4,999",
               image:
                 "https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg",
             },
@@ -815,31 +814,31 @@ export default function Home() {
   {[
     {
       name: "Headphones",
-      price: "$159.00",
+      price: "14,000",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm30VkMCFkEUgvtCYwNy5kCGsbPTj6UqulFuA3X1WUAdgnsdXfMmXjONcQ&s=10",
     },
     {
       name: "Laptop",
-      price: "$899.00",
+      price: "299,999",
       image:
         "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Laptop-Snapdragon-8Ed-HR-Front?wid=1200&hei=900&qlt=90&bgc=F2F2F2F2&fmt=jpg",
     },
     {
       name: "Smartphone",
-      price: "$569.00",
+      price: "98,000",
       image:
         "https://images.samsung.com/is/image/samsung/assets/pk/s2602/pcd/smartphones/PF_Main-Category_Galaxy-Smartphone_176x176.png?$ORIGIN_PNG$",
     },
     {
-      name: "Digital Camera",
-      price: "$699.00",
+      name: "Camera",
+      price: "149,000",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiOIH5AfwLRuiKKgXupfIQQf0pSIwynHrgR1yzdU2LvgSi94D4vcBAMM&s=10",
     },
     {
       name: "Gaming",
-      price: "$69.00",
+      price: "8,999",
       image:
         "https://www.skygames.com.pk/wp-content/uploads/2025/11/easysmx-d10-multi-platform-wireless-gaming-controller-black-1.png",
     },
@@ -1013,51 +1012,50 @@ export default function Home() {
     {/* Products */}
     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 
-      {/* Product 1 */}
-      <ProductCard
-        sale="$199.00"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQ5oQyhobns78EYY18Lr4n0kMmEBW9X4hmQ22flSqavZmvDHJPb1dlH1J&s=10"
-        name="SROK Smart Phone 128GB, OLED Retina"
-        price="$579.00"
-        oldPrice="$859.00"
-        stock="In stock"
-      />
+     {/* Product 1 */}
+<ProductCard
+  sale="19999"
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQ5oQyhobns78EYY18Lr4n0kMmEBW9X4hmQ22flSqavZmvDHJPb1dlH1J&s=10"
+  name="SROK Smart Phone 128GB, OLED Retina"
+  price="189999"
+  oldPrice="209999"
+  stock="In stock"
+/>
 
-      {/* Product 2 */}
-      <ProductCard
-        newProduct
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRoQ1MId9gyaxAZQ0IYpYgF8xrSnXUlgLLtcumAOD8HBcQdzCsPZUXxFU2&s=10"
-        name="aPod Pro Tablet 2023 LTE + WiFi, GPS Cellular 12.9 Inch, 512GB"
-        price="$979.00 - $1,259.00"
-        stock="In stock"
-      />
+{/* Product 2 */}
+<ProductCard
+  newProduct
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRoQ1MId9gyaxAZQ0IYpYgF8xrSnXUlgLLtcumAOD8HBcQdzCsPZUXxFU2&s=10"
+  name="aPod Pro Tablet 2023 LTE + WiFi, GPS Cellular 12.9 Inch, 512GB"
+  price="189999 - 229999"
+  stock="In stock"
+/>
 
-      {/* Product 3 */}
-      <ProductCard
-        image="https://i.ebayimg.com/images/g/4WcAAeSweTZoR4mU/s-l1200.webp"
-        name="OPod Pro 12.9 Inch M1 2023, 64GB + Wifi, GPS"
-        price="$659.00"
-        stock="In stock"
-      />
+{/* Product 3 */}
+<ProductCard
+  image="https://i.ebayimg.com/images/g/4WcAAeSweTZoR4mU/s-l1200.webp"
+  name="OPod Pro 12.9 Inch M1 2023, 64GB + Wifi, GPS"
+  price="139999"
+  stock="In stock"
+/>
 
-      {/* Product 4 */}
-      <ProductCard
-        sale="$59.00"
-        image="https://www.gracedigital.pk/wp-content/uploads/2025/05/Xiaomi-Redmi-A5-1.webp"
-        name="Xiaomi Redmi Note 5, 64GB"
-        price="$1,239.00"
-        oldPrice="$1,619.00"
-        stock="Contact"
-      />
+{/* Product 4 */}
+<ProductCard
+  sale="6999"
+  image="https://www.gracedigital.pk/wp-content/uploads/2025/05/Xiaomi-Redmi-A5-1.webp"
+  name="Xiaomi Redmi Note 5, 64GB"
+  price="69999"
+  oldPrice="84999"
+  stock="Contact"
+/>
 
-      {/* Product 5 */}
-      <ProductCard
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFUhpcSmlFQbn4mH1IY68aCwq_JXZNJlKV3ObTu3CMX7hKRbFbl9r5m1ky&s=10"
-        name="Microsute Alpha Ultra S5 Surface 128GB 2022, Silver"
-        price="$1,729.00"
-        stock="Contact"
-      />
-
+{/* Product 5 */}
+<ProductCard
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFUhpcSmlFQbn4mH1IY68aCwq_JXZNJlKV3ObTu3CMX7hKRbFbl9r5m1ky&s=10"
+  name="Microsute Alpha Ultra S5 Surface 128GB 2022, Silver"
+  price="199999"
+  stock="Contact"
+/>
     </div>
 
   </div>
@@ -1593,7 +1591,7 @@ export default function Home() {
           </p>
 
           <p className="mt-1 text-[9px] font-bold text-gray-900">
-            $579.00
+            579.00
           </p>
         </div>
       </Link>
@@ -1620,7 +1618,7 @@ export default function Home() {
           </p>
 
           <p className="mt-1 text-[9px] font-bold text-gray-900">
-            $979.00
+            449,999
           </p>
         </div>
       </Link>
@@ -1647,7 +1645,7 @@ export default function Home() {
           </p>
 
           <p className="mt-1 text-[9px] font-bold text-gray-900">
-            $979.00 - $1,259.00
+            348,000 - 449,999
           </p>
         </div>
       </Link>
@@ -1668,7 +1666,7 @@ export default function Home() {
           <span className="absolute right-0 top-0 rounded bg-green-600 px-1 text-[5px] text-white">
             SAVE
             <br />
-            $3.00
+            $2,000
           </span>
         </div>
 
@@ -1680,7 +1678,7 @@ export default function Home() {
           </p>
 
           <p className="mt-1 text-[9px] font-bold text-red-500">
-            $579.00
+            89,000
           </p>
         </div>
       </Link>

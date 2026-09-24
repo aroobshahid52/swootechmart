@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Footer from "@/components/Footer";
 
+
 type Product = {
   _id?: string;
   title?: string;
@@ -37,6 +38,12 @@ export default function OrderDetailsPage() {
       fetchOrder();
     }
   }, [id]);
+
+const [role, setRole] = useState("");
+  useEffect(() => {
+  const userRole = localStorage.getItem("role") || "";
+  setRole(userRole.toLowerCase());
+}, []);
 
   async function fetchOrder() {
     try {
@@ -144,13 +151,19 @@ export default function OrderDetailsPage() {
 
             <span className="mx-2">/</span>
 
-            <Link
+            {/* <Link
               href="/orders"
               className="hover:text-green-600"
             >
               Orders
-            </Link>
+            </Link> */}
 
+           <Link
+  href={role === "admin" ? "/admin/orders" : "/orders"}
+  className="hover:text-green-600"
+>
+  {role === "admin" ? "Admin Orders" : "Orders"}
+</Link>
             <span className="mx-2">/</span>
 
             <span className="text-gray-900">
